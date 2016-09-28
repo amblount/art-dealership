@@ -17,3 +17,8 @@ user stories go here
 #### Work (picture) modal pop-up to display a large version of the piece with nested modals to explain more about significant portions of the work
 ![alt text](https://github.com/amblount/art-dealership/blob/master/wireframes/artist_piece.png "artist show")
 
+## Schema
+![alt text](https://github.com/amblount/art-dealership/blob/master/wireframes/art_collection_schema.png "schema")
+
+
+
