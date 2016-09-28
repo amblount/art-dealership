@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Art Dealership</title>
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+     <!-- STYLESHEETS -->
+     <link rel="stylesheet" href="../public/styles/css/style.css">
+
+     <!-- VENDOR SCRIPTS -->
+     <!-- jquery -->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+     <!-- handlebars -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+     <!-- APPLICATION SCRIPTS -->
+     <script src="../public/scripts/data.js"></script>
+     <script src="../public/scripts/app.js"></script>
+     <!-- CSS  -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="../public/styles/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="../public/styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   </head>
+   <body>
+
+     <nav class="pink lighten-1" role="navigation">
+       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Art Dealership</a>
+         <ul class="right">
+           <li><a href="#">Login</a></li>
+           <li><a href="#">Register</a></li>
+         </ul>
+
+         <ul id="nav-mobile" class="side-nav">
+           <li><a href="#"></a></li>
+         </ul>
+         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+       </div>
+     </nav>
+     <div class="section no-pad-bot" id="index-banner">
+       <div class="container">
+         <br><br>
+         <h3 class="header center light-blue-text"></h3>
+
+         <div class="row center">
+           <a href="#" id="download-button" class="btn-large waves-effect waves-light pink"></a>
+         </div>
+         <br><br>
+
+       </div>
+     </div>
+
+     <div id="department-list" class="department-container">
+       <script id="department-list-template" type="text/x-handlebars-template">
+         <div class="container">
+
+         {{#each department}}
+
+            <div class="row">
+            <div class="col l6 center">
+            <div class="card" id="{{name}}-department">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/department/{{name}}.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
+              <!-- <p><a href="">{{name}}</a></p> -->
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{name}}<i class="material-icons right">close</i></span>
+              <p>{{description}}</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        {{/each}}
+
+      </div>
+       </script>
+
+     </div>
+
+
+
+     <footer class="page-footer pink">
+       <div class="container">
+         <div class="row">
+           <div class="col l6 s12">
+             <h5 class="white-text">General Assembly</h5>
+
+
+           </div>
+           <div class="col l3 s12">
+             <h5 class="white-text">Project 2</h5>
+           </div>
+           <div class="col l3 s12">
+             <h5 class="white-text">WDI32</h5>
+           </div>
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         </div>
+       </div>
+     </footer>
+
+
+     <!--  Scripts-->
+     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script src="../public/scripts/materialize.js"></script>
+     <script src="../public/scripts/materialize.min.js"></script>
+     <script src="../public/scripts/init.js"></script>
+     <script src="../public/scripts/init.js"></script>
+     <script scr="../public/scripts/app.js"></script>
+     </body>
+</html>
