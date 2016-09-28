@@ -1,11 +1,14 @@
-# art-dealership
+# Art Dealership
 
 ##User Stories
 user stories go here
 
-- User can
-- User can
-- User can
+- User can follow artists
+- User can unfollow artists
+- User can favorite artworks
+- User can dislike artworks
+- User can add new artists
+- User can update artist bio/info
 
 ## Wire Frames
 #### View all artists
