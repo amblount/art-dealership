@@ -8,12 +8,14 @@
     <!-- Materialize Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
+    <!-- add firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
      <!-- STYLESHEETS -->
      <link rel="stylesheet" href="../public/styles/css/style.css">
 
      <!-- VENDOR SCRIPTS -->
      <!-- jquery -->
-     <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
      <!-- handlebars -->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
@@ -53,17 +55,17 @@
        </div>
      </div>
 
-     <div id="department-list" class="department-container">
-       <script id="department-list-template" type="text/x-handlebars-template">
+     <div id="artist-list" class="artist-container">
+       <script id="artist-list-template" type="text/x-handlebars-template">
          <div class="container">
 
          {{#each artist}}
 
             <div class="row">
             <div class="col l6 center">
-            <div class="card" id="{{name}}-department">
+            <div class="card" id="{{name}}-artist">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/department/{{name}}.jpeg">
+              <img class="activator" src="images/artist/{{name}}.jpeg">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>

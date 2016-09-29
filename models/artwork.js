@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 var ArtworkSchema = new Schema({
   title: String,
   description: String,
-  imageUrl: String,
-  artistId: Number
+  imageUrl: String
+  // , artistId: Number
 });
 
 var Artwork = mongoose.model('Artwork', ArtworkSchema);
