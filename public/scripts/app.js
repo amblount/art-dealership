@@ -8,15 +8,15 @@ $(document).ready(function(){
   };
   firebase.initializeApp(config);
 
-  // create reference
-  var databaseRef = firebase.databse().ref("artists");
-
-  // load data
-  databaseRef.limitToLast(10)on('child_added', function(snapshot) {
-    var data = snapshot.val();
-    var line = "<li>" + data.name + ": " + data.text + "</li>"
-    $('#messages').append(line);
-  })
+  // // create reference
+  // var databaseRef = firebase.databse().ref("artists");
+  //
+  // // load data
+  // databaseRef.limitToLast(10)on('child_added', function(snapshot) {
+  //   var data = snapshot.val();
+  //   var line = "<li>" + data.name + ": " + data.text + "</li>"
+  //   $('#messages').append(line);
+  // })
 
 
   // submit messages

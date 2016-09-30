@@ -5,10 +5,16 @@
  *
  * Made By MaterializeCSS.com
  */
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }
