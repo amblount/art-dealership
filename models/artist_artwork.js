@@ -1,4 +1,4 @@
-var mongooge = require('mongoose');
+var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var artistArtworkSchema = new Schema ({
@@ -6,5 +6,5 @@ var artistArtworkSchema = new Schema ({
   artworkId: {type: Schema.Types.ObjectId, ref: 'Artwork'}
 });
 
-var artistArtwork = mongoose.model('ArtistArtwork', artistArtworkSchema);
-module.exports = artistArtwork;
+var ArtistArtwork = mongoose.model('ArtistArtwork', artistArtworkSchema);
+module.exports = ArtistArtwork;

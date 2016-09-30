@@ -1,4 +1,4 @@
-var mongooge = require('mongoose');
+var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var ArtworkSchema = new Schema({

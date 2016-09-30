@@ -4,18 +4,19 @@
 var express = require('express');
 // generate a new express app and call it 'app'
 var app = express();
-// var mongoose = require('mongoose');
-// var bodyParser = require('body-parser');
-//
-// // serve static files from public folder
-// app.use(express.static(__dirname + '/public'));
-// app.use(bodyParser.urlencoded({ extended: true }));
+var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
+
+app.use('/static', express.static(__dirname + '/public'));
+console.log(__dirname + '/public');
+
+
 
 /************
  * DATABASE *
  ************/
 
-// var db = require('./models');
+var db = require('./models');
 
 /**********
  * ROUTES *
@@ -26,8 +27,7 @@ var app = express();
  */
 
 app.get('/', function homepage (req, res) {
-  res.send("Hello")
-  // res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 //
 // app.get('/artists', function homepage (req, res) {

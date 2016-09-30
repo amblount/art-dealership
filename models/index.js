@@ -8,5 +8,5 @@ module.exports = {
 };
 // require all models
 // export all models
-console.log(Object.keys(require('./artist'))
+// console.log(Object.keys(require('./artist')))
 // console.log()
