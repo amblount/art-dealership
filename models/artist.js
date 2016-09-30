@@ -8,7 +8,7 @@ var ArtistSchema = new Schema({
   lastName: String,
   dateOfBirth: Date,
   cityOfBirth: String,
-  artworks: [{type: Schema.Types.ObjectId, ref: 'Artwork' }]
+  artworks: [{type: Schema.Types.Object, ref: 'Artwork' }]
 });
 
 var Artist = mongoose.model('Artist', ArtistSchema);
